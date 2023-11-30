@@ -28,6 +28,8 @@ def rand_number():
     """
     nums = list(range(1, 10))
     random.shuffle(nums)
+    while nums[0]== 0:
+        random.shuffle(nums)
     return nums[:4]
 
 def guess_rating(secret_number, guess):
